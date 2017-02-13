@@ -2,9 +2,9 @@
 狼人杀上帝助手，线下多人面杀时帮助上帝标记玩家角色以及状态
 
 ####下载地址
-[狼人杀上帝助手]("https://github.com/mavsforlife/werewolf/releases/tag/1.0")
+[狼人杀上帝助手](https://github.com/mavsforlife/werewolf/releases/tag/1.0)
 
-[二维码下载]("http://fir.im/ltqf")
+[二维码下载](http://fir.im/ltqf)
 ####选择玩家人数与角色
 <img src="https://raw.githubusercontent.com/mavsforlife/werewolf/master/app/src/main/assets/wolves_1.png" width = "324" height = "576"/>
 
