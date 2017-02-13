@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.victor.wolves.Model.Role;
+import com.victor.wolves.model.Role;
 import com.victor.wolves.R;
 import com.victor.wolves.adapter.RoleAdapter;
 import com.victor.wolves.listener.OnItemClickListener;

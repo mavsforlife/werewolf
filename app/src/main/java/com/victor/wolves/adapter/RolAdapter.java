@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import com.victor.wolves.Model.Role;
+import com.victor.wolves.model.Role;
 import com.victor.wolves.R;
 
 import java.util.List;

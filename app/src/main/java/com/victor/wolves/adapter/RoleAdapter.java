@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.victor.wolves.Model.Role;
+import com.victor.wolves.model.Role;
 import com.victor.wolves.R;
 import com.victor.wolves.listener.OnItemClickListener;
 

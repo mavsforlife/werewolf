@@ -22,8 +22,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.victor.wolves.Model.DieType;
-import com.victor.wolves.Model.Role;
+import com.victor.wolves.model.DieType;
+import com.victor.wolves.model.Role;
 import com.victor.wolves.R;
 import com.victor.wolves.adapter.RolAdapter;
 import com.victor.wolves.adapter.SetRoleAdapter;

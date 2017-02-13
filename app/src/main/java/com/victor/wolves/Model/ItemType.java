@@ -1,4 +1,4 @@
-package com.victor.wolves.Model;
+package com.victor.wolves.model;
 
 /**
  * Created by victor on 2017/1/24.
