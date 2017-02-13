@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">狼人杀上帝工具</string>
+    <string name="select_player_num">选择总人数：</string>
+    <string name="reduce">减少</string>
+    <string name="add">增加</string>
+    <string name="_10">10</string>
+    <string name="select_role">选择角色：</string>
+    <string name="close_your_eyes">天黑请闭眼</string>
+    <string name="Villager">村民</string>
+    <string name="werewolf">狼人</string>
+    <string name="cupid">丘比特</string>
+    <string name="poison">女巫毒杀</string>
+    <string name="exile">公投放逐</string>
+    <string name="kill">狼人猎杀</string>
+    <string name="hunt">猎人带走</string>
+    <string name="sing_player_status">请标记%d号玩家状态</string>
+    <string name="is_alive">是否存活</string>
+    <string name="select_identity">选择身份</string>
+    <string name="ensure">确定</string>
+    <string name="press_number_sign_property">轻按数字标记属性</string>
+    <string name="sign_lover">标记为恋人</string>
+    <string name="die_for_love">恋人殉情</string>
+    <string name="message_clear_data">返回上一页面将清空所有当前数据，需重新设置玩家信息，确定返回？</string>
+    <string name="cancel">取消</string>
+    <string name="select_die_type">请选择死亡类型！</string>
+</resources>

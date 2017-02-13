@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_die_type_end"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_poison_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="5dp"
+        android:text="@string/poison"
+        android:textColor="@drawable/selector_text"
+        android:background="@drawable/selector_textview"/>
+
+    <TextView
+        android:id="@+id/tv_exile_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="5dp"
+        android:text="@string/exile"
+        android:textColor="@drawable/selector_text"
+        android:background="@drawable/selector_textview"/>
+
+    <TextView
+        android:id="@+id/tv_kill_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="5dp"
+        android:text="@string/kill"
+        android:textColor="@drawable/selector_text"
+        android:background="@drawable/selector_textview"/>
+
+    <TextView
+        android:id="@+id/tv_hunt_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="5dp"
+        android:text="@string/hunt"
+        android:textColor="@drawable/selector_text"
+        android:background="@drawable/selector_textview"/>
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_sign_status_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sing_player_status"
+        android:textSize="18sp"
+        android:paddingBottom="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/is_alive"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_alive_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/ll_die_type_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="3"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_poison_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_margin="3dp"
+            android:text="@string/poison"
+            android:textColor="@drawable/selector_text"
+            android:background="@drawable/selector_textview"/>
+
+        <TextView
+            android:id="@+id/tv_exile_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_margin="3dp"
+            android:text="@string/exile"
+            android:textColor="@drawable/selector_text"
+            android:background="@drawable/selector_textview"/>
+
+        <TextView
+            android:id="@+id/tv_kill_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_margin="3dp"
+            android:text="@string/kill"
+            android:textColor="@drawable/selector_text"
+            android:background="@drawable/selector_textview"/>
+
+        <TextView
+            android:id="@+id/tv_hunt_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_margin="3dp"
+            android:text="@string/hunt"
+            android:textColor="@drawable/selector_text"
+            android:background="@drawable/selector_textview"/>
+
+        <TextView
+            android:id="@+id/tv_for_love_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_margin="3dp"
+            android:text="@string/die_for_love"
+            android:textColor="@drawable/selector_text"
+            android:background="@drawable/selector_textview"/>
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_sign_lover_end"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sign_lover"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_sign_lover_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_select_id_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_identity"
+        android:paddingTop="5dp"/>
+
+    <ListView
+        android:id="@+id/lv_role_end"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:divider="@null"/>
+
+    <TextView
+        android:id="@+id/tv_confirm_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ensure"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:background="@drawable/blue_fill_corner"
+        android:padding="10dp"/>
+</LinearLayout>
