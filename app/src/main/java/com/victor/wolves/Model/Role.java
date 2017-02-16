@@ -1,4 +1,4 @@
-package com.victor.wolves.Model;
+package com.victor.wolves.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
