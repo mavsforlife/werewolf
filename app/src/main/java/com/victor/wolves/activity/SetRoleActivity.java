@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -41,6 +42,9 @@ public class SetRoleActivity extends AppCompatActivity implements CompoundButton
     private static final String ROLE_LIST = "role_list";
     private static final String ROLE_COUNT = "role_count";
     private static final String IS_NEED_SIGN_LOVER = "isNeedSignLover";
+
+    private static final int LEFT_DRAWER = 0x00;
+    private static final int RIGHT_DRAWER = 0x01;
 
     @BindView(R.id.dl)
     DrawerLayout mDl;
@@ -122,6 +126,7 @@ public class SetRoleActivity extends AppCompatActivity implements CompoundButton
         mRoleList = getIntent().getParcelableArrayListExtra(ROLE_LIST);
         mPlayerCount = getIntent().getIntExtra(ROLE_COUNT, -1);
         mIsNeedSignLover = getIntent().getBooleanExtra(IS_NEED_SIGN_LOVER, false);
+
         initData();
     }
 
@@ -293,14 +298,14 @@ public class SetRoleActivity extends AppCompatActivity implements CompoundButton
     void onBtnClick(View v) {
         switch (v.getId()) {
             case R.id.tv_confirm_start:
-                confirmSetRole();
+                confirmSetRole(LEFT_DRAWER);
                 if (mDl.isDrawerOpen(Gravity.LEFT)) {
                     mDl.closeDrawer(Gravity.LEFT);
                 }
                 break;
 
             case R.id.tv_confirm_end:
-                confirmSetRole();
+                confirmSetRole(RIGHT_DRAWER);
                 if (mDl.isDrawerOpen(Gravity.RIGHT)) {
                     mDl.closeDrawer(Gravity.RIGHT);
                 }
@@ -308,13 +313,13 @@ public class SetRoleActivity extends AppCompatActivity implements CompoundButton
         }
     }
 
-    private void confirmSetRole() {
+    private void confirmSetRole(int position) {
         if (!mScEnd.isChecked() && mDieType == 0) {
             Toast.makeText(this, R.string.select_die_type, Toast.LENGTH_LONG).show();
             return;
         }
 
-        mGameRole.setAlive(mScEnd.isChecked());
+        mGameRole.setAlive(position == LEFT_DRAWER ? mScStart.isChecked() : mScEnd.isChecked());
         mGameRole.setDieTye(mDieType);
         mList.get(mCurrentPos).setName(mGameRole.getName());
         mList.get(mCurrentPos).setAlive(mGameRole.isAlive());
@@ -378,10 +383,9 @@ public class SetRoleActivity extends AppCompatActivity implements CompoundButton
     }
 
     @OnClick({R.id.tv_sign_status_start, R.id.tv_sign_status_end, R.id.tv_select_id_start,
-            R.id.tv_select_id_end, R.id.ll_die_type_start, R.id.ll_die_type_end})
-    void onReturnNull() {
-
-    }
+            R.id.tv_select_id_end, R.id.ll_die_type_start, R.id.ll_die_type_end,
+            R.id.tv_is_alive_start, R.id.tv_sign_to_lover_start})
+    void onReturnNull() {}
 
     private void checkDieTypeLlIsVisible(boolean isChecked) {
         mLlDieTypeEnd.setVisibility(isChecked ? View.GONE : View.VISIBLE);

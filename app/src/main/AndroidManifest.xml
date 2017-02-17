@@ -19,7 +19,7 @@
         </activity>
         <activity
             android:name=".activity.SetRoleActivity"
-            android:windowSoftInputMode="adjustPan|stateHidden" />
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
     </application>
 
 </manifest>
