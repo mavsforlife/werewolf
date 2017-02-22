@@ -48,7 +48,9 @@ public class SetRoleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
         holder.itemView.setSelected(true);
         if (holder instanceof ItemLeftViewHolder) {
-            final int leftPosition = position / 2;
+            final int leftPosition = getItemCount() % 2 == 0 ?
+                    getItemCount() / 2 - position / 2 - 1 :
+                    getItemCount() / 2 - position / 2;
             ((ItemLeftViewHolder) holder).mTvRoleName.setText(mList.get(leftPosition).getName());
             ((ItemLeftViewHolder) holder).mTvSerialNum.setText(String.valueOf(leftPosition + 1));
             ((ItemLeftViewHolder) holder).mTvDieType.setText(mList.get(leftPosition).getDieTypeStr());
