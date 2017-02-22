@@ -20,9 +20,11 @@
 
 - 上帝在第一个夜晚可以为每个玩家分配角色，之后每个夜晚标记玩家状态
 
+<img src="https://raw.githubusercontent.com/mavsforlife/werewolf/master/app/src/main/assets/wolves_3.png" width = "324" height = "576"/>
 
 - 玩家概览
 
+<img src="https://raw.githubusercontent.com/mavsforlife/werewolf/master/app/src/main/assets/wolves_2.png" width = "324" height = "576"/>
 
 #####P.S.
 
